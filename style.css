@@ -1,0 +1,220 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Courier New", monospace;
+}
+
+
+body{
+    overflow:hidden;
+}
+
+
+.pantalla{
+
+    width:100vw;
+    height:100vh;
+
+    background:#151936;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+
+}
+
+
+.estrellas{
+
+    position:absolute;
+    top:40px;
+
+    width:100%;
+
+    text-align:center;
+
+    font-size:35px;
+
+    color:white;
+
+    animation:brillar 2s infinite alternate;
+
+}
+
+
+
+@keyframes brillar{
+
+    from{
+        opacity:.4;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}
+
+
+
+.luna{
+
+    position:absolute;
+
+    top:60px;
+    right:80px;
+
+    font-size:90px;
+
+}
+
+
+
+.contenido{
+
+    text-align:center;
+
+}
+
+
+
+h1{
+
+    font-size:60px;
+
+    color:#f6b7d2;
+
+    letter-spacing:8px;
+
+    text-shadow:5px 5px #8a7dff;
+
+}
+
+
+
+p{
+
+    margin:20px;
+
+    color:#c9d7ff;
+
+}
+
+
+
+.baki{
+
+    font-size:90px;
+
+    margin:20px;
+
+    animation:saltar 1s infinite alternate;
+
+}
+
+
+
+@keyframes saltar{
+
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform:translateY(-10px);
+    }
+
+}
+
+
+
+
+button{
+
+    padding:15px 35px;
+
+    background:#8a7dff;
+
+    color:white;
+
+    border:4px solid white;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+}
+
+
+
+button:hover{
+
+    transform:scale(1.1);
+
+    background:#f6b7d2;
+
+}
+
+
+
+small{
+
+    display:block;
+
+    margin-top:40px;
+
+    color:#aaa;
+
+}
+
+
+
+.oculto{
+
+    display:none;
+
+}
+
+
+
+#historia{
+
+    width:100vw;
+    height:100vh;
+
+    background:#151936;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+.caja{
+
+    width:70%;
+
+    padding:30px;
+
+    background:#252b55;
+
+    border:5px solid #f6b7d2;
+
+    text-align:center;
+
+}
+
+
+
+.baki-grande{
+
+    font-size:100px;
+
+}
