@@ -4,52 +4,61 @@ const inicio = document.getElementById("inicio");
 
 const historia = document.getElementById("historia");
 
-const continuar = document.getElementById("continuar");
-
-const mundo1 = document.getElementById("mundo1");
 
 const texto = document.getElementById("texto");
+
+const continuar = document.getElementById("continuar");
 
 
 
 boton.addEventListener("click",()=>{
 
+
     inicio.style.display="none";
 
-    historia.style.display="flex";
+    historia.classList.remove("oculto");
+
 
     escribir();
+
 
 });
 
 
 
+
+
 function escribir(){
 
+
 let mensaje = 
-"¡Guau! 🐾\n\nHola Chime...\n\nEstaba esperando por ti.\n\nEste pequeño mundo fue creado especialmente para ti.\n\n¿Lista para comenzar tu aventura? ✨";
+"¡Guau! 🐾\n\nHola Chime...\n\nEstaba esperando por ti.\n\nEste pequeño mundo fue creado especialmente para ti.\n\n¿Lista para comenzar tu aventura?";
 
 
 let i=0;
+
 
 texto.innerHTML="";
 
 
 let intervalo=setInterval(()=>{
 
-texto.innerHTML += mensaje[i];
 
-i++;
+    texto.innerHTML += mensaje[i];
 
 
-if(i>=mensaje.length){
+    i++;
 
-clearInterval(intervalo);
 
-}
+    if(i>=mensaje.length){
+
+        clearInterval(intervalo);
+
+    }
 
 
 },50);
+
 
 
 }
@@ -58,8 +67,8 @@ clearInterval(intervalo);
 
 continuar.addEventListener("click",()=>{
 
-historia.style.display="none";
 
-mundo1.style.display="flex";
+    alert("Próximamente: El mundo de Press Start 🌙🐶");
+
 
 });
