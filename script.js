@@ -67,10 +67,8 @@ let intervalo=setInterval(()=>{
 
 continuar.addEventListener("click",()=>{
 
+    document.getElementById("historia").style.display="none";
 
-const boton = document.getElementById("continuar");
+    document.getElementById("mundo1").style.display="block";
 
-boton.addEventListener("click", function() {
-  document.getElementById("inicio").style.display = "none";
-  document.getElementById("juego").style.display = "block";
 });
