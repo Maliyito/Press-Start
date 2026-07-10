@@ -68,7 +68,9 @@ let intervalo=setInterval(()=>{
 continuar.addEventListener("click",()=>{
 
 
-    alert("Próximamente: El mundo de Press Start 🌙🐶");
+const boton = document.getElementById("continuar");
 
-
+boton.addEventListener("click", function() {
+  document.getElementById("inicio").style.display = "none";
+  document.getElementById("juego").style.display = "block";
 });
