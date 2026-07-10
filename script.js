@@ -73,3 +73,7 @@ document.getElementById("mundo1").style.display="block";
 
     
 });
+
+<script src="script.js"></script>
+</body>
+</html>
