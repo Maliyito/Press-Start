@@ -218,17 +218,3 @@ small{
     font-size:100px;
 
 }
-
-#historia {
-    width: 80%;
-    max-width: 600px;
-    margin: 50px auto;
-    text-align: center;
-}
-
-#texto {
-    white-space: pre-line;
-    font-size: 20px;
-    line-height: 1.6;
-    text-align: center;
-}
