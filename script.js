@@ -60,14 +60,9 @@ let intervalo=setInterval(()=>{
 },50);
 
 
-
-}
-
-
-
 continuar.addEventListener("click",()=>{
 
-    document.getElementById("historia").style.display="none";
+    historia.style.display="none";
 
     document.getElementById("mundo1").style.display="block";
 
