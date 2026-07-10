@@ -1,87 +1,146 @@
-body {
-
+*{
     margin:0;
     padding:0;
-
+    box-sizing:border-box;
     font-family: "Courier New", monospace;
+}
 
-    background:#10142b;
+
+body{
+    overflow:hidden;
+}
+
+
+.pantalla{
+
+    width:100vw;
+    height:100vh;
+
+    background:#151936;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
     color:white;
 
 }
 
 
-.pantalla {
+.estrellas{
 
-    min-height:100vh;
+    position:absolute;
+    top:40px;
 
-    display:flex;
+    width:100%;
 
-    justify-content:center;
+    text-align:center;
 
-    align-items:center;
+    font-size:35px;
+
+    color:white;
+
+    animation:brillar 2s infinite alternate;
+
+}
+
+
+
+@keyframes brillar{
+
+    from{
+        opacity:.4;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}
+
+
+
+.luna{
+
+    position:absolute;
+
+    top:60px;
+    right:80px;
+
+    font-size:90px;
+
+}
+
+
+
+.contenido{
 
     text-align:center;
 
 }
 
 
-.oculto {
 
-    display:none;
-
-}
-
-
-.estrellas {
-
-    position:absolute;
-
-    top:30px;
-
-    font-size:30px;
-
-}
-
-
-.luna {
-
-    position:absolute;
-
-    top:70px;
-
-    right:80px;
+h1{
 
     font-size:60px;
 
+    color:#f6b7d2;
+
+    letter-spacing:8px;
+
+    text-shadow:5px 5px #8a7dff;
+
 }
 
 
-.contenido h1 {
 
-    font-size:55px;
-
-}
-
-
-.baki {
-
-    font-size:80px;
+p{
 
     margin:20px;
 
+    color:#c9d7ff;
+
 }
 
 
-button {
 
-    background:#263b80;
+.baki{
+
+    font-size:90px;
+
+    margin:20px;
+
+    animation:saltar 1s infinite alternate;
+
+}
+
+
+
+@keyframes saltar{
+
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform:translateY(-10px);
+    }
+
+}
+
+
+
+
+button{
+
+    padding:15px 35px;
+
+    background:#8a7dff;
 
     color:white;
 
-    border:3px solid white;
-
-    padding:15px 35px;
+    border:4px solid white;
 
     font-size:20px;
 
@@ -90,72 +149,72 @@ button {
 }
 
 
-button:hover {
+
+button:hover{
 
     transform:scale(1.1);
 
+    background:#f6b7d2;
+
 }
 
 
-.caja {
 
-    background:#182044;
+small{
 
-    border:5px solid white;
+    display:block;
 
-    padding:30px;
+    margin-top:40px;
+
+    color:#aaa;
+
+}
+
+
+
+.oculto{
+
+    display:none;
+
+}
+
+
+
+#historia{
+
+    width:100vw;
+    height:100vh;
+
+    background:#151936;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+.caja{
 
     width:70%;
 
-    max-width:700px;
+    padding:30px;
 
-}
+    background:#252b55;
 
+    border:5px solid #f6b7d2;
 
-#texto {
-
-    min-height:120px;
-
-    font-size:22px;
-
-    white-space:pre-line;
+    text-align:center;
 
 }
 
 
 
-.mapa {
+.baki-grande{
 
-    margin-top:30px;
-
-    height:250px;
-
-    background:#477a4b;
-
-    border:5px solid white;
-
-    position:relative;
-
-}
-
-
-.personaje {
-
-    position:absolute;
-
-    bottom:40px;
-
-    left:50px;
-
-    font-size:50px;
-
-}
-
-
-.objeto {
-
-    font-size:40px;
-
-    margin:20px;
+    font-size:100px;
 
 }
